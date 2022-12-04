@@ -22,12 +22,112 @@
 
 body {
     font-family: 'Overpass', sans-serif;
-    font-size: 15px
+    font-size: 15px;
+    font-weight: 400;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
+
+.Main-container, .thank-you {
+    background-color: hsl(213, 19%, 18%);
+    margin: 2.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 375px;
+    
+}
+
+.Main-container img {
+    padding: .6rem;
+    background-color: hsl(216, 12%, 24%);
+    border-radius: 50%;
+
+}
+
+.Main-container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 15px;
+    
+}
+
+.Main-container .btn {
+    background-color: hsl(216, 12%, 24%);
+    border: none;
+    padding: 1rem;
+    margin: 1rem .8rem;
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.Main-container .btn:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.Main-container .btn:focus {
+    background-color: hsl(217, 12%, 63%);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    margin: 1rem 0;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.thank-you p {
+    text-align: center;
+    padding: 0 1rem 1.2rem;
+}
+
+.thank-you p.notice {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(216, 12%, 24%);
+    margin-top: 1rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-submit {
+    width:100%;
+    padding: .8rem 0;
+    border-radius: 2rem;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    color: hsl(0, 0%, 100%) 
 }
 
 .attribution a {
